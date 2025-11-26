@@ -8,29 +8,29 @@
 export const Report_Categories = [
   {
     id: "facility",
-    label: "Fasilitas",
-    description: "AC, toilet, WiFi, ruang kelas, dll",
+    label: "Facility",
+    description: "AC, toilet, WiFi, classroom, etc.",
     icon: "Vector2.svg",
     color: "blue",
   },
   {
     id: "security",
-    label: "Keamanan",
-    description: "Lampu parkir, CCTV, keamanan kampus",
+    label: "Security",
+    description: "Parking lights, CCTV, campus security",
     icon: "Security.svg",
     color: "red",
   },
   {
     id: "academic",
-    label: "Akademik",
-    description: "Lab komputer, sound system, proyektor",
+    label: "Academic",
+    description: "Computer lab, sound system, projector",
     icon: "Academic.svg",
     color: "purple",
   },
   {
     id: "environment",
-    label: "Lingkungan",
-    description: "Sampah, kebersihan, drainage",
+    label: "Environment",
+    description: "Trash, cleanliness, drainage",
     icon: "Environment.svg",
     color: "green",
   },
@@ -43,22 +43,22 @@ export const Report_Categories = [
 export const Report_Statuses = [
   {
     id: "pending",
-    label: "Menunggu",
+    label: "Pending",
     color: "gray",
   },
   {
     id: "in-progress",
-    label: "Sedang Diproses",
+    label: "In Progress",
     color: "blue",
   },
   {
     id: "resolved",
-    label: "Selesai",
+    label: "Resolved",
     color: "green",
   },
   {
     id: "rejected",
-    label: "Ditolak",
+    label: "Rejected",
     color: "red",
   },
 ];
