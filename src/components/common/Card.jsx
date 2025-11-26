@@ -4,7 +4,7 @@ const Card = ({ children, className = '', hoverEffect = false, as: Component = '
   
   // Gaya Card umum (Rounded-xl, Shadow ringan)
   const baseClasses = `
-    bg-white p-4 rounded-xl shadow-lg 
+    bg-white p-4 rounded-2xl shadow-lg 
     ${hoverEffect ? 'hover:shadow-xl transition duration-300 ease-in-out' : ''} 
     ${className}
   `;
