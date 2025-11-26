@@ -25,6 +25,16 @@ export default function ReportForm() {
     setForm((prev) => ({ ...prev, [name]: value }));
   };
 
+  // Convert image file to base64 string
+  const convertImageToBase64 = (file) => {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onloadend = () => resolve(reader.result);
+      reader.onerror = reject;
+      reader.readAsDataURL(file);
+    });
+  };
+
   const handleSubmit = async () => {
     if (!user) {
       setError("You must be logged in to submit a report.");
@@ -38,13 +48,19 @@ export default function ReportForm() {
     }
 
     try {
+      // Convert image to base64 if exists
+      let imageUrl = "";
+      if (form.image) {
+        imageUrl = await convertImageToBase64(form.image);
+      }
+
       const reportData = {
         userId: user.id,               
         userName: user.name,           
         category: form.category,
         location: form.location,
         description: form.description,
-        imageUrl: form.image ? URL.createObjectURL(form.image) : "",
+        imageUrl: imageUrl,
         status: "pending",
       };
 
@@ -59,6 +75,9 @@ export default function ReportForm() {
         confirm: false,
       });
       setError("");
+
+      // Navigate to home page after successful submission
+      navigate("/home");
 
     } catch (err) {
       console.error("Submit error:", err);
