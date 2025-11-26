@@ -49,7 +49,7 @@ const ReportCard = ({
           <div className="flex justify-between items-start">
             
             {/* KIRI: Judul Besar */}
-            <h3 className=" font-bold text-2xl text-black leading-tight w-[55%] break-words">
+            <h3 className=" font-bold text-2xl text-black leading-tight w-[55%] wrap-break-word">
               {title}
             </h3>
 
@@ -65,7 +65,7 @@ const ReportCard = ({
               {/* Badge Lokasi (Ungu) */}
               <div className="bg-[#6F42C1] text-white px-2 py-1 rounded-full text-[10px] font-semibold flex items-center gap-1 shadow-sm max-w-full truncate">
                 <MapPin size={12} strokeWidth={3} />
-                <span className="truncate max-w-[80px]">{location}</span>
+                <span className="truncate max-w-20">{location}</span>
               </div>
 
             </div>

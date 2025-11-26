@@ -41,7 +41,7 @@ const ReportDetailModal = ({ report, onClose }) => {
         {/* stopPropagation agar saat klik modal, dia tidak ikut tertutup */}
         <div 
           onClick={(e) => e.stopPropagation()} 
-          className="bg-white rounded-[2rem] shadow-2xl w-full  max-w-lg overflow-hidden relative animate-modal p-7"
+          className="bg-white rounded-4xl shadow-2xl w-full  max-w-lg overflow-hidden relative animate-modal p-7"
         >
           
           {/* Header: Tombol Back/Close */}
@@ -84,7 +84,7 @@ const ReportDetailModal = ({ report, onClose }) => {
                   
                   {/* Lokasi */}
                   <span className="bg-[#6F42C1] text-white px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1 shadow-sm text-right">
-                    <svg className="w-3 h-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" /></svg>
+                    <svg className="w-3 h-3 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" /></svg>
                     <span className="truncate max-w-[150px]">{report.location || "Unknown Location"}</span>
                   </span>
                 </div>

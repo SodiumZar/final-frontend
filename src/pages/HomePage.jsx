@@ -102,7 +102,7 @@ const HomePage = () => {
             {/* Tombol Sort (Menggunakan Button temanmu) */}
            <Button 
                 onClick={toggleSort}
-                className="flex items-center gap-2 bg-white !text-black border border-gray-200 hover:bg-gray-100 !rounded-4xl"
+                className="flex items-center gap-2 bg-white text-black! border border-gray-200 hover:bg-gray-100 rounded-4xl!"
                 >
                 {/* Logika Ganti Icon & Teks */}
                 {sortOrder === 'newest' ? (
