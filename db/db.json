@@ -25,6 +25,14 @@
       "department": "Engineering"
     },
     {
+      "id": "4",
+      "name": "Sarah Lombogia",
+      "email": "sarah.lombogia@unklab.ac.id",
+      "password": "student123",
+      "studentId": "11220004",
+      "department": "Nursing"
+    },
+    {
       "id": "5",
       "name": "Michael Tumewu",
       "email": "michael.tumewu@unklab.ac.id",
@@ -36,7 +44,7 @@
   "reports": [
     {
       "id": "1",
-      "userId": 1,
+      "userId": "1",
       "userName": "Jonathan Manoppo",
       "category": "facility",
       "location": "Library Building - 2nd Floor Reading Area",
@@ -48,19 +56,19 @@
     },
     {
       "id": "2",
-      "userId": 2,
+      "userId": "2",
       "userName": "Maria Kumayas",
       "category": "security",
       "location": "Parking Lot B - Near Cafeteria",
       "description": "The lighting in this parking area is very dim at night. Students feel unsafe when leaving late classes.",
       "imageUrl": "https://images.unsplash.com/photo-1590674899484-d5640e854abe?w=400",
-      "status": "in_progress",
+      "status": "in-progress",
       "createdAt": "2025-11-18T19:45:00Z",
       "updatedAt": "2025-11-22T10:00:00Z"
     },
     {
       "id": "3",
-      "userId": 3,
+      "userId": "3",
       "userName": "David Sondakh",
       "category": "academic",
       "location": "Engineering Lab - Room 301",
@@ -72,7 +80,7 @@
     },
     {
       "id": "4",
-      "userId": 1,
+      "userId": "1",
       "userName": "Jonathan Manoppo",
       "category": "environment",
       "location": "Main Campus Garden - Behind Administration Building",
@@ -84,19 +92,19 @@
     },
     {
       "id": "5",
-      "userId": 4,
+      "userId": "4",
       "userName": "Sarah Lombogia",
       "category": "facility",
       "location": "Nursing Building - Women's Restroom 1st Floor",
       "description": "One of the toilet doors is broken and cannot be locked properly. This is a privacy concern for female students.",
       "imageUrl": "https://images.unsplash.com/photo-1585421514738-01798e348b17?w=400",
-      "status": "in_progress",
+      "status": "in-progress",
       "createdAt": "2025-11-19T13:00:00Z",
       "updatedAt": "2025-11-21T09:00:00Z"
     },
     {
       "id": "7",
-      "userId": 2,
+      "userId": "2",
       "userName": "Maria Kumayas",
       "category": "facility",
       "location": "Student Center - Wi-Fi Area",
@@ -108,7 +116,7 @@
     },
     {
       "id": "8",
-      "userId": 3,
+      "userId": "3",
       "userName": "David Sondakh",
       "category": "environment",
       "location": "Soccer Field - Drainage System",
