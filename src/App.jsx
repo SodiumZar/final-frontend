@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
 import ProtectedRoute from './components/common/ProtectedRoute';
+import Layout from './components/layout/Layout';
 import LoginPage from './pages/LoginPage';
 import HomePage from './pages/HomePage';
 import SubmitReportPage from './pages/SubmitReportPage';
@@ -14,11 +15,13 @@ const App = () => {
           {/* Public Route */}
           <Route path="/login" element={<LoginPage />} />
           
-          {/* Protected Routes */}
+          {/* Protected Routes - Wrapped with Layout */}
           <Route element={<ProtectedRoute />}>
-            <Route path="/home" element={<HomePage />} />
-            <Route path="/submit-report" element={<SubmitReportPage />} />
-            <Route path="/profile" element={<ProfilePage />} />
+            <Route element={<Layout />}>
+              <Route path="/home" element={<HomePage />} />
+              <Route path="/submit-report" element={<SubmitReportPage />} />
+              <Route path="/profile" element={<ProfilePage />} />
+            </Route>
           </Route>
           
           {/* Redirect root to home */}
