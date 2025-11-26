@@ -4,7 +4,7 @@
       "id": "1",
       "name": "Jonathan Manoppo",
       "email": "jonathan.manoppo@unklab.ac.id",
-      "password": "KOntol",
+      "password": "student123",
       "studentId": "11220001",
       "department": "Computer Science"
     },
@@ -125,6 +125,30 @@
       "status": "pending",
       "createdAt": "2025-11-24T11:30:00Z",
       "updatedAt": "2025-11-24T11:30:00Z"
+    },
+    {
+      "id": "d349",
+      "userId": "1",
+      "userName": "Anonymous User",
+      "category": "facility",
+      "location": "Nicholas",
+      "description": "Dekskfoajofa",
+      "imageUrl": "blob:http://localhost:5173/b32904cf-a5e8-45be-a466-ce42b818c267",
+      "status": "pending",
+      "createdAt": "2025-11-26T18:00:33.989Z",
+      "updatedAt": "2025-11-26T18:00:33.989Z"
+    },
+    {
+      "id": "4472",
+      "userId": "1",
+      "userName": "Jonathan Manoppo",
+      "category": "academic",
+      "location": "Airmadidi",
+      "description": "19481491041",
+      "imageUrl": "blob:http://localhost:5173/fd2f634f-3f34-46ff-ac48-e4d5d0340e05",
+      "status": "pending",
+      "createdAt": "2025-11-26T18:04:19.425Z",
+      "updatedAt": "2025-11-26T18:04:19.425Z"
     }
   ]
 }

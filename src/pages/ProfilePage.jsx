@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import ChangePasswordPopup from "../components/features/ChangePasswordPopup"; 
 import UserStats from "../components/features/UserStats";
 import { useState } from "react";
+import Footer from "../components/layout/Footer.jsx"
 
 export default function ProfilePage() {
   const { user, logout } = useAuth();
@@ -17,6 +18,7 @@ export default function ProfilePage() {
   };
 
   return (
+    <>
     <div className="px-25 pb-6 pt-10 gap-6">
 
       
@@ -29,7 +31,7 @@ export default function ProfilePage() {
 
         <div className="mt-7">
           <h1 className="text-3xl font-bold">{user.name}</h1>
-          <div className="bg-purple-600 text-white font-semibold w-40 px-4 py-2 rounded-full text-center mt-4">
+          <div className="bg-[#6F42C1] text-white font-semibold w-40 px-4 py-2 rounded-full text-center mt-4">
             Student
           </div>
           <div className="text-purple-800 mt-3 text-sm opacity-50">
@@ -63,7 +65,7 @@ export default function ProfilePage() {
       {/* Change Password Button */}
       <button
         onClick={() => setOpen(true)}
-        className="bg-purple-600 text-white px-4 py-2 rounded-full"
+        className="bg-[#6F42C1] text-white px-4 py-2 rounded-full"
       >
         Change Password
       </button>
@@ -72,6 +74,11 @@ export default function ProfilePage() {
         <h1 className="text-xl font-semibold mb-4">Statistic</h1>
         <UserStats />
       </div>
+        
     </div>
+    <div>
+        <Footer />
+    </div>
+    </>
   );
 }

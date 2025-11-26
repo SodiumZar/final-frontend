@@ -90,7 +90,7 @@ const ChangePasswordPopup = ({ isOpen, onClose }) => {
 
           <button
             type="submit"
-            className="bg-purple-600 text-white px-5 py-2 rounded-full w-full"
+            className="bg-[#6F42C1] text-white px-5 py-2 rounded-full w-full"
           >
             Update Password
           </button>

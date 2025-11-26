@@ -9,7 +9,7 @@ export default function CategorySelector({ selected, onSelect }) {
             onClick={() => onSelect(cat.id)}
             className={`
               w-20 h-20 rounded-full flex items-center justify-center
-              ${selected === cat.id ? "bg-purple-600" : "bg-purple-300"}
+              ${selected === cat.id ? "bg-[#6F42C1]" : "bg-purple-300"}
             `}
           >
             <img src={cat.icon} alt={cat.label} className="w-10 h-10" />
