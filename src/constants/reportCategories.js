@@ -10,28 +10,28 @@ export const Report_Categories = [
     id: "facility",
     label: "Fasilitas",
     description: "AC, toilet, WiFi, ruang kelas, dll",
-    icon: "🏢",
+    icon: "Vector2.svg",
     color: "blue",
   },
   {
     id: "security",
     label: "Keamanan",
     description: "Lampu parkir, CCTV, keamanan kampus",
-    icon: "🔒",
+    icon: "Security.svg",
     color: "red",
   },
   {
     id: "academic",
     label: "Akademik",
     description: "Lab komputer, sound system, proyektor",
-    icon: "📚",
+    icon: "Academic.svg",
     color: "purple",
   },
   {
     id: "environment",
     label: "Lingkungan",
     description: "Sampah, kebersihan, drainage",
-    icon: "🌳",
+    icon: "Environment.svg",
     color: "green",
   },
 ];
@@ -70,7 +70,7 @@ export const Report_Statuses = [
  * @param {string} id - The category ID (e.g., 'facility')
  * @returns {Object|undefined} The category object or undefined if not found
  */
-export const getCategoryById = (id) => {
+export function getCategoryById(id) {
   return Report_Categories.find((cat) => cat.id === id);
 };
 

@@ -4,7 +4,7 @@ import api from "./api";
 
 const Users_Endpoint = "/users";
 
-export const userService = {
+const userService = {
   /**
    * Get all users from the database.
    * @returns {Promise<Array>} List of users
