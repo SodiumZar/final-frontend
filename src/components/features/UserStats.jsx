@@ -1,7 +1,10 @@
 // User Statistics Component
 import React, { useState, useEffect } from 'react';
+import { useAuth } from '../../context/AuthContext';
 
 const StatisticSection = () => {
+  const { user } = useAuth();
+  
   // 1. STATE: Untuk menyimpan angka statistik
   const [stats, setStats] = useState({
     submitted: 0,
@@ -11,15 +14,20 @@ const StatisticSection = () => {
   // 2. FETCH DATA: Mengambil data langsung saat komponen ini dipasang
   useEffect(() => {
     const fetchStats = async () => {
+      if (!user) return; // Guard clause - exit if no user
+      
       try {
         // Pastikan json-server berjalan di port 3000
         const response = await fetch('http://localhost:3000/reports');
         const data = await response.json();
 
-        // Hitung Statistik
-        const totalSubmitted = data.length;
+        // Filter reports by current user ID
+        const userReports = data.filter(item => item.userId === user.id);
+
+        // Hitung Statistik untuk user ini saja
+        const totalSubmitted = userReports.length;
         // Hitung yang statusnya 'resolved' (sesuai db.json kamu)
-        const totalResolved = data.filter(item => item.status === 'resolved').length;
+        const totalResolved = userReports.filter(item => item.status === 'resolved').length;
 
         // Simpan ke state
         setStats({
@@ -28,12 +36,12 @@ const StatisticSection = () => {
         });
         
       } catch (error) {
-        console.error("Gagal mengambil data statistik:", error);
+        console.error("Failed to fetch statistics data:", error);
       }
     };
 
     fetchStats();
-  }, []);
+  }, [user]); // Re-run if user changes
 
   return (
     <div className="w-[1239px] mx-auto  mb-6 ">
