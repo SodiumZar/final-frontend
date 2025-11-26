@@ -45,11 +45,10 @@ const HeroSection = () => {
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start gap-8 mb-12 pt-4">
         <div className="md:w-2/3 pt-12">
           <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
-            Student form reports <br /> for university
+            Student form reports <br /> for Universitas Klabat
           </h1>
           <p className="text-purple-200 text-sm md:text-base leading-relaxed max-w-2xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies vehicula pulvinar. Vivamus finibus dui vitae aliquet posuere. Pellentesque nulla quam, iaculis sit amet lobortis in, dictum in erat.
-          </p>
+            UK Guard is here to support you every step of the way. Our platform allows you to report issues quickly, receive timely information, and stay aware of what’s happening around you. By working together and staying engaged, we can build a stronger, safer, and more watchful community for everyone.          </p>
         </div>
         <div className="md:w-1/3 flex justify-start md:justify-end pb-12">
          <img src={logoImage} alt="University Logo"  className="w-full h-auto object-contain ">
