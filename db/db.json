@@ -1,7 +1,41 @@
 {
+  "users": [
+    {
+      "id": "1",
+      "name": "Jonathan Manoppo",
+      "email": "jonathan.manoppo@unklab.ac.id",
+      "password": "student123",
+      "studentId": "11220001",
+      "department": "Computer Science"
+    },
+    {
+      "id": "2",
+      "name": "Maria Kumayas",
+      "email": "maria.kumayas@unklab.ac.id",
+      "password": "student123",
+      "studentId": "11220002",
+      "department": "Business Administration"
+    },
+    {
+      "id": "3",
+      "name": "David Sondakh",
+      "email": "david.sondakh@unklab.ac.id",
+      "password": "student123",
+      "studentId": "11220003",
+      "department": "Engineering"
+    },
+    {
+      "id": "5",
+      "name": "Michael Tumewu",
+      "email": "michael.tumewu@unklab.ac.id",
+      "password": "student123",
+      "studentId": "11220005",
+      "department": "Theology"
+    }
+  ],
   "reports": [
     {
-      "id": 1,
+      "id": "1",
       "userId": 1,
       "userName": "Jonathan Manoppo",
       "category": "facility",
@@ -13,7 +47,7 @@
       "updatedAt": "2025-11-20T14:30:00Z"
     },
     {
-      "id": 2,
+      "id": "2",
       "userId": 2,
       "userName": "Maria Kumayas",
       "category": "security",
@@ -25,7 +59,7 @@
       "updatedAt": "2025-11-22T10:00:00Z"
     },
     {
-      "id": 3,
+      "id": "3",
       "userId": 3,
       "userName": "David Sondakh",
       "category": "academic",
@@ -37,7 +71,7 @@
       "updatedAt": "2025-11-19T16:30:00Z"
     },
     {
-      "id": 4,
+      "id": "4",
       "userId": 1,
       "userName": "Jonathan Manoppo",
       "category": "environment",
@@ -49,7 +83,7 @@
       "updatedAt": "2025-11-21T08:15:00Z"
     },
     {
-      "id": 5,
+      "id": "5",
       "userId": 4,
       "userName": "Sarah Lombogia",
       "category": "facility",
@@ -61,19 +95,7 @@
       "updatedAt": "2025-11-21T09:00:00Z"
     },
     {
-      "id": 6,
-      "userId": 5,
-      "userName": "Michael Tumewu",
-      "category": "academic",
-      "location": "Chapel - Sound System",
-      "description": "The microphone system keeps cutting out during worship services. This disrupts the service and makes it hard to hear.",
-      "imageUrl": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=400",
-      "status": "pending",
-      "createdAt": "2025-11-23T07:45:00Z",
-      "updatedAt": "2025-11-23T07:45:00Z"
-    },
-    {
-      "id": 7,
+      "id": "7",
       "userId": 2,
       "userName": "Maria Kumayas",
       "category": "facility",
@@ -85,7 +107,7 @@
       "updatedAt": "2025-11-17T14:00:00Z"
     },
     {
-      "id": 8,
+      "id": "8",
       "userId": 3,
       "userName": "David Sondakh",
       "category": "environment",
