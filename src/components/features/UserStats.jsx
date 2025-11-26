@@ -37,9 +37,12 @@ const StatisticSection = () => {
 
   return (
     <div className="w-[1239px] mx-auto  mb-6 ">
+      {/* Judul Section */}
+      <h2 className="text-xl font-bold text-black mb-4">Statistic</h2>
 
       <div className="grid grid-cols-2 gap-4">
         
+        {/* Kartu Ungu: Reports Submitted */}
         <div className="bg-[#6F42C1] h-[150px] rounded-2xl p-5 flex justify-between items-center text-white shadow-sm hover:shadow-md transition-shadow">
           <div className="flex flex-col">
             <span className="text-3xl font-semibold leading-snug">
