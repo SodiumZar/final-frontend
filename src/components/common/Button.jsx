@@ -48,7 +48,7 @@ const Button = ({
 
   // 3. Gabungkan Semua Kelas
   const baseClasses = `
-    font-semibold focus:outline-none focus:ring-4 focus:ring-[#6F42C1]/50 
+    font-semibold focus:outline-none  
     flex items-center justify-center whitespace-nowrap gap-2 // gap-2 untuk jarak ikon
     ${getRadius()} // Menerapkan radius
     ${disabled ? 'opacity-50 cursor-not-allowed' : 'active:scale-[0.98]'} 
