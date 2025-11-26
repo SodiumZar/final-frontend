@@ -1,8 +1,9 @@
-import { reportCategories } from "../../constants/reportCategories";
+import { Report_Categories } from "../../constants/reportCategories";
+
 export default function CategorySelector({ selected, onSelect }) {
   return (
     <div className="flex justify-between w-full px-10 mt-5">
-      {reportCategories.map(cat => (
+      {Report_Categories.map((cat) => (
         <div key={cat.id} className="flex flex-col items-center">
           <button
             onClick={() => onSelect(cat.id)}

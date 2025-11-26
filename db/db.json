@@ -1,0 +1,130 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Jonathan Manoppo",
+      "email": "jonathan.manoppo@unklab.ac.id",
+      "password": "KOntol",
+      "studentId": "11220001",
+      "department": "Computer Science"
+    },
+    {
+      "id": "2",
+      "name": "Maria Kumayas",
+      "email": "maria.kumayas@unklab.ac.id",
+      "password": "student123",
+      "studentId": "11220002",
+      "department": "Business Administration"
+    },
+    {
+      "id": "3",
+      "name": "David Sondakh",
+      "email": "david.sondakh@unklab.ac.id",
+      "password": "student123",
+      "studentId": "11220003",
+      "department": "Engineering"
+    },
+    {
+      "id": "4",
+      "name": "Sarah Lombogia",
+      "email": "sarah.lombogia@unklab.ac.id",
+      "password": "student123",
+      "studentId": "11220004",
+      "department": "Nursing"
+    },
+    {
+      "id": "5",
+      "name": "Michael Tumewu",
+      "email": "michael.tumewu@unklab.ac.id",
+      "password": "student123",
+      "studentId": "11220005",
+      "department": "Theology"
+    }
+  ],
+  "reports": [
+    {
+      "id": "1",
+      "userId": "1",
+      "userName": "Jonathan Manoppo",
+      "category": "facility",
+      "location": "Library Building - 2nd Floor Reading Area",
+      "description": "Several air conditioning units are not functioning properly. The temperature is uncomfortably warm, making it difficult to study.",
+      "imageUrl": "https://images.unsplash.com/photo-1581093458791-9d42e7d9b5c1?w=400",
+      "status": "pending",
+      "createdAt": "2025-11-20T14:30:00Z",
+      "updatedAt": "2025-11-20T14:30:00Z"
+    },
+    {
+      "id": "2",
+      "userId": "2",
+      "userName": "Maria Kumayas",
+      "category": "security",
+      "location": "Parking Lot B - Near Cafeteria",
+      "description": "The lighting in this parking area is very dim at night. Students feel unsafe when leaving late classes.",
+      "imageUrl": "https://images.unsplash.com/photo-1590674899484-d5640e854abe?w=400",
+      "status": "in-progress",
+      "createdAt": "2025-11-18T19:45:00Z",
+      "updatedAt": "2025-11-22T10:00:00Z"
+    },
+    {
+      "id": "3",
+      "userId": "3",
+      "userName": "David Sondakh",
+      "category": "academic",
+      "location": "Engineering Lab - Room 301",
+      "description": "Three computers in the lab are not working. Students need these for CAD assignments that are due this week.",
+      "imageUrl": "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=400",
+      "status": "resolved",
+      "createdAt": "2025-11-15T10:20:00Z",
+      "updatedAt": "2025-11-19T16:30:00Z"
+    },
+    {
+      "id": "4",
+      "userId": "1",
+      "userName": "Jonathan Manoppo",
+      "category": "environment",
+      "location": "Main Campus Garden - Behind Administration Building",
+      "description": "Trash bins are overflowing and have not been emptied for several days. This creates an unpleasant smell and attracts insects.",
+      "imageUrl": "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=400",
+      "status": "pending",
+      "createdAt": "2025-11-21T08:15:00Z",
+      "updatedAt": "2025-11-21T08:15:00Z"
+    },
+    {
+      "id": "5",
+      "userId": "4",
+      "userName": "Sarah Lombogia",
+      "category": "facility",
+      "location": "Nursing Building - Women's Restroom 1st Floor",
+      "description": "One of the toilet doors is broken and cannot be locked properly. This is a privacy concern for female students.",
+      "imageUrl": "https://images.unsplash.com/photo-1585421514738-01798e348b17?w=400",
+      "status": "in-progress",
+      "createdAt": "2025-11-19T13:00:00Z",
+      "updatedAt": "2025-11-21T09:00:00Z"
+    },
+    {
+      "id": "7",
+      "userId": "2",
+      "userName": "Maria Kumayas",
+      "category": "facility",
+      "location": "Student Center - Wi-Fi Area",
+      "description": "Internet connection is very slow and frequently disconnects. Students cannot submit online assignments properly.",
+      "imageUrl": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=400",
+      "status": "resolved",
+      "createdAt": "2025-11-10T16:20:00Z",
+      "updatedAt": "2025-11-17T14:00:00Z"
+    },
+    {
+      "id": "8",
+      "userId": "3",
+      "userName": "David Sondakh",
+      "category": "environment",
+      "location": "Soccer Field - Drainage System",
+      "description": "The field floods easily after rain due to poor drainage. Students cannot use the field for sports activities.",
+      "imageUrl": "https://images.unsplash.com/photo-1589487391730-58f20eb2c308?w=400",
+      "status": "pending",
+      "createdAt": "2025-11-24T11:30:00Z",
+      "updatedAt": "2025-11-24T11:30:00Z"
+    }
+  ]
+}
