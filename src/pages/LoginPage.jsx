@@ -28,11 +28,11 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
+    <div className="min-h-screen flex items-center justify-center bg-purple-100">
       <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
         {/* Logo & Title */}
         <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold text-blue-600">UK-Guard</h1>
+          <h1 className="text-3xl font-bold text-purple-500">UK-Guard</h1>
           <p className="text-gray-600 mt-2">Universitas Klabat Reporting System</p>
         </div>
 
@@ -81,7 +81,7 @@ const LoginPage = () => {
           <button
             type="submit"
             disabled={loading}
-            className="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed"
+            className="w-full bg-purple-500 text-white py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed"
           >
             {loading ? 'Logging in...' : 'Login'}
           </button>
