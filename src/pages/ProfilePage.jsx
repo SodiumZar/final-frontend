@@ -5,6 +5,7 @@ import UserStats from "../components/features/UserStats";
 import ReportCard from "../components/features/ReportCard";
 import ReportDetailModal from "../components/features/ReportDetailModal";
 import { useState, useEffect } from "react";
+import { Trash2 } from 'lucide-react';
 
 export default function ProfilePage() {
   const { user, logout } = useAuth();
@@ -47,6 +48,36 @@ export default function ProfilePage() {
     if (!dateString) return "";
     const options = { day: 'numeric', month: 'short', year: 'numeric' };
     return new Date(dateString).toLocaleDateString('en-GB', options);
+  };
+
+  // Delete report (only pending ones)
+  const handleDeleteReport = async (reportId, status) => {
+    // Only allow deletion of pending reports
+    if (status.toLowerCase() !== 'pending') {
+      alert('Only pending reports can be deleted.');
+      return;
+    }
+
+    if (!confirm('Are you sure you want to delete this report?')) {
+      return;
+    }
+
+    try {
+      const response = await fetch(`http://localhost:3000/reports/${reportId}`, {
+        method: 'DELETE',
+      });
+
+      if (response.ok) {
+        // Remove the deleted report from state
+        setUserReports(prevReports => prevReports.filter(report => report.id !== reportId));
+        alert('Report deleted successfully!');
+      } else {
+        throw new Error('Failed to delete report');
+      }
+    } catch (error) {
+      console.error('Error deleting report:', error);
+      alert('Failed to delete report. Please try again.');
+    }
   };
 
   if (!user) return <p>Loading...</p>;
@@ -125,16 +156,31 @@ export default function ProfilePage() {
         ) : userReports.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {userReports.map((report) => (
-              <ReportCard
-                key={report.id}
-                title={report.category ? report.category.charAt(0).toUpperCase() + report.category.slice(1) + " Issue" : "Report Issue"}
-                image={report.imageUrl}
-                date={formatDate(report.createdAt)}
-                location={report.location}
-                category={report.category}
-                status={report.status}
-                onClick={() => setSelectedReport(report)}
-              />
+              <div key={report.id} className="relative group">
+                <ReportCard
+                  title={report.category ? report.category.charAt(0).toUpperCase() + report.category.slice(1) + " Issue" : "Report Issue"}
+                  image={report.imageUrl}
+                  date={formatDate(report.createdAt)}
+                  location={report.location}
+                  category={report.category}
+                  status={report.status}
+                  onClick={() => setSelectedReport(report)}
+                />
+                
+                {/* Delete Button - Only show for pending reports */}
+                {report.status.toLowerCase() === 'pending' && (
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      handleDeleteReport(report.id, report.status);
+                    }}
+                    className="absolute top-3 right-3 bg-red-600 hover:bg-red-700 text-white p-2 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity z-10"
+                    title="Delete Report"
+                  >
+                    <Trash2 size={18} />
+                  </button>
+                )}
+              </div>
             ))}
           </div>
         ) : (
