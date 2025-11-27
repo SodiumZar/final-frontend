@@ -9,7 +9,7 @@ const HeroSection = () => {
     },
     {
       title: "Security",
-      image: "https://images.unsplash.com/photo-1555436169-20e93ee0a887?q=80&w=2000&auto=format&fit=crop", // Gambar CCTV/Security
+      image: "https://images.unsplash.com/photo-1631002165123-3f45a6275bb5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Gambar Security
     },
     {
       title: "Environment",
@@ -17,7 +17,7 @@ const HeroSection = () => {
     },
     {
       title: "Academic",
-      image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2000&auto=format&fit=crop", // Gambar Kelas/Belajar
+      image: "https://images.unsplash.com/photo-1569682535081-3e826bee049b?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Gambar Kelas
     },
   ];
 
