@@ -5,7 +5,7 @@ const modalRoot = document.getElementById('modal-root');
 
 // Pastikan elemen <div id="modal-root"> ada di index.html Anda
 if (!modalRoot) {
-    console.error("Elemen 'modal-root' tidak ditemukan. Modal mungkin tidak berfungsi.");
+    console.error("Element 'modal-root' not found. Modal may not work properly.");
 }
 
 const Modal = ({ isOpen, onClose, children, title, size = 'lg' }) => {
