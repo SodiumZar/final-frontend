@@ -3,42 +3,50 @@
     {
       "id": "1",
       "name": "Jonathan Manoppo",
-      "email": "jonathan.manoppo@unklab.ac.id",
+      "email": "s11220001@student.unklab.ac.id",
       "password": "student123",
-      "studentId": "11220001",
+      "studentId": "s11220001",
       "department": "Computer Science"
     },
     {
       "id": "2",
       "name": "Maria Kumayas",
-      "email": "maria.kumayas@unklab.ac.id",
+      "email": "s11220002@student.unklab.ac.id",
       "password": "student123",
-      "studentId": "11220002",
+      "studentId": "s11220002",
       "department": "Business Administration"
     },
     {
       "id": "3",
       "name": "David Sondakh",
-      "email": "david.sondakh@unklab.ac.id",
+      "email": "s11220003@student.unklab.ac.id",
       "password": "student123",
-      "studentId": "11220003",
+      "studentId": "s11220003",
       "department": "Engineering"
     },
     {
       "id": "4",
       "name": "Sarah Lombogia",
-      "email": "sarah.lombogia@unklab.ac.id",
+      "email": "s11220004@student.unklab.ac.id",
       "password": "student123",
-      "studentId": "11220004",
+      "studentId": "s11220004",
       "department": "Nursing"
     },
     {
       "id": "5",
       "name": "Michael Tumewu",
-      "email": "michael.tumewu@unklab.ac.id",
+      "email": "s11220005@student.unklab.ac.id",
       "password": "student123",
-      "studentId": "11220005",
+      "studentId": "s11220005",
       "department": "Theology"
+    },
+    {
+      "id": "6",
+      "name": "Nazarya Kandou",
+      "email": "s22310240@student.unklab.ac.id",
+      "password": "student123",
+      "studentId": "s22310240",
+      "department": "Computer Science"
     }
   ],
   "reports": [
@@ -49,7 +57,7 @@
       "category": "facility",
       "location": "Library Building - 2nd Floor Reading Area",
       "description": "Several air conditioning units are not functioning properly. The temperature is uncomfortably warm, making it difficult to study.",
-      "imageUrl": "https://images.unsplash.com/photo-1581093458791-9d42e7d9b5c1?w=400",
+      "imageUrl": "https://images.unsplash.com/photo-1485322551133-3a4c27a9d925?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "status": "Pending",
       "createdAt": "2025-11-20T14:30:00Z",
       "updatedAt": "2025-11-20T14:30:00Z"
